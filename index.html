@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prakyath Tejsundar — AI, Full-Stack & FinTech Developer</title>
+  <meta name="description" content="Portfolio of Prakyath Tejsundar — Computer Science student at VIT Vellore specializing in AI, Full-Stack, and FinTech development." />
+  <meta name="keywords" content="Prakyath Tejsundar, portfolio, AI developer, full-stack, FinTech, FastAPI, React, Python" />
+  <meta name="author" content="Prakyath Tejsundar" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Prakyath Tejsundar — Developer Portfolio" />
+  <meta property="og:description" content="AI, Full-Stack & FinTech developer building intelligent systems and scalable applications." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧑‍💻</text></svg>" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" id="nav-logo">PT<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"     class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#about"    class="nav-link"        id="nav-about">About</a></li>
+        <li><a href="#skills"   class="nav-link"        id="nav-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link"        id="nav-projects">Projects</a></li>
+        <li><a href="#contact"  class="nav-cta"         id="nav-contact">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════════ -->
+    <section class="hero section" id="home">
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- Left: Content -->
+          <div class="hero-content">
+            <div class="hero-badge reveal">
+              <span class="dot"></span>
+              Open to opportunities
+            </div>
+
+            <h1 class="hero-title reveal">
+              Hi, I'm<br />
+              <span class="name-highlight">Prakyath Tejsundar</span>
+            </h1>
+
+            <p class="hero-subtitle reveal">
+              AI · Full-Stack · FinTech Developer
+            </p>
+
+            <p class="hero-desc reveal">
+              Computer Science student at <strong>VIT Vellore</strong> building intelligent,
+              scalable systems at the intersection of AI, finance, and healthcare.
+              I turn complex problems into elegant software.
+            </p>
+
+            <div class="hero-actions reveal">
+              <a href="#projects" class="btn-primary" id="hero-view-projects">
+                View Projects
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="mailto:prakyath238@gmail.com" class="btn-secondary" id="hero-contact">
+                Say Hello 👋
+              </a>
+            </div>
+
+            <div class="hero-social reveal">
+              <!-- GitHub -->
+              <a href="https://github.com/praky826" target="_blank" rel="noopener" aria-label="GitHub" id="social-github">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/prakyath-tejsundar-4451573ab" target="_blank" rel="noopener" aria-label="LinkedIn" id="social-linkedin">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <!-- Email -->
+              <a href="mailto:prakyath238@gmail.com" aria-label="Email" id="social-email">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Visual -->
+          <div class="hero-visual reveal">
+            <div class="hero-avatar-wrap">
+              <div class="hero-avatar" aria-label="Avatar">
+                🧑‍💻
+              </div>
+              <div class="hero-stat-card card-projects" aria-label="Projects count">
+                <span class="stat-icon">🚀</span>
+                <div>
+                  <span class="stat-label">Projects Built</span>
+                  <span class="stat-value">4+</span>
+                </div>
+              </div>
+              <div class="hero-stat-card card-cgpa" aria-label="CGPA">
+                <span class="stat-icon">🎓</span>
+                <div>
+                  <span class="stat-label">CGPA at VIT</span>
+                  <span class="stat-value">8.62</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider container"></div>
+
+    <!-- ═══════════════════════════════════════
+         ABOUT SECTION
+    ═══════════════════════════════════════ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Left: Text -->
+          <div class="about-left">
+            <p class="section-label reveal">Who I Am</p>
+            <h2 class="section-title reveal">A builder at heart,<br />driven by curiosity</h2>
+
+            <div class="about-text reveal">
+              <p>
+                I'm <strong>Prakyath Tejsundar</strong>, a second-year Computer Science student at
+                <strong>Vellore Institute of Technology</strong>, specializing in CS &amp; Business Systems.
+                My work lives at the crossroads of <strong>AI, FinTech, and Healthcare Technology</strong>.
+              </p>
+              <p>
+                I love building full-stack products that solve real problems — from AI-powered personality
+                analyzers to financial management platforms and doctor–patient prescription systems.
+                I'm particularly excited about <strong>LLM applications, vector databases, and agentic AI workflows</strong>.
+              </p>
+              <p>
+                When I'm not coding, I enjoy competitive programming and exploring how technology can
+                reshape finance and healthcare.
+              </p>
+            </div>
+
+            <div class="education-card reveal">
+              <div class="edu-icon">🏛️</div>
+              <h4>Vellore Institute of Technology (VIT)</h4>
+              <p class="edu-degree">B.Tech. in Computer Science &amp; Engineering and Business Systems</p>
+              <div class="edu-meta">
+                <span class="edu-badge">📅 2024 – 2028</span>
+                <span class="edu-badge">⭐ CGPA 8.62</span>
+                <span class="edu-badge">📍 Vellore</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Cards -->
+          <div class="about-right">
+
+            <div class="achievement-card reveal">
+              <div class="achievement-icon">🏆</div>
+              <div>
+                <h4>Runner-Up — Reverse Coding</h4>
+                <p>Yantra'26 · VIT Vellore's annual technical fest. Competed in a reverse engineering
+                coding challenge and secured runner-up position.</p>
+              </div>
+            </div>
+
+            <div class="reveal">
+              <p style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-light);margin-bottom:12px;">Areas of Interest</p>
+              <div class="interest-tags">
+                <span class="interest-tag">🤖 AI Agents</span>
+                <span class="interest-tag">💰 FinTech</span>
+                <span class="interest-tag">🏥 Healthcare Tech</span>
+                <span class="interest-tag">⚙️ Workflow Automation</span>
+                <span class="interest-tag">📊 Data Science</span>
+                <span class="interest-tag">🔍 Semantic Search</span>
+                <span class="interest-tag">🧠 LLM Applications</span>
+                <span class="interest-tag">🗄️ Vector Databases</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider container"></div>
+
+    <!-- ═══════════════════════════════════════
+         SKILLS SECTION
+    ═══════════════════════════════════════ -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <p class="section-label reveal">What I Work With</p>
+        <h2 class="section-title reveal">Skills &amp; Tech Stack</h2>
+        <p class="section-desc reveal">A curated set of languages, frameworks, and tools I use to build end-to-end products.</p>
+
+        <div class="skills-grid">
+
+          <div class="skill-category reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon purple">🧠</div>
+              <h3>AI &amp; Machine Learning</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">NLP</span>
+              <span class="skill-tag">Sentiment Analysis</span>
+              <span class="skill-tag">LLM Applications</span>
+              <span class="skill-tag">Vector Databases</span>
+              <span class="skill-tag">OpenAI API</span>
+              <span class="skill-tag">n8n</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon blue">⚙️</div>
+              <h3>Backend &amp; APIs</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">SQLAlchemy</span>
+              <span class="skill-tag">JWT Auth</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">R</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon green">🌐</div>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Three.js</span>
+              <span class="skill-tag">Vite</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon orange">📱</div>
+              <h3>Mobile</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Dart</span>
+              <span class="skill-tag">Firebase</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon teal">🗄️</div>
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Firebase Firestore</span>
+              <span class="skill-tag">Pinecone</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon yellow">🛠️</div>
+              <h3>Tools &amp; Platforms</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">n8n</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider container"></div>
+
+    <!-- ═══════════════════════════════════════
+         PROJECTS SECTION
+    ═══════════════════════════════════════ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-label reveal">What I've Built</p>
+        <h2 class="section-title reveal">Featured Projects</h2>
+        <p class="section-desc reveal">End-to-end products across AI, FinTech, and Healthcare — from idea to deployment.</p>
+
+        <div class="projects-grid">
+
+          <!-- ALTER-EGO -->
+          <div class="project-card reveal" id="project-alter-ego">
+            <div class="project-header">
+              <div class="project-icon" style="background:#ede9fe;">🪞</div>
+              <div class="project-links">
+                <a href="https://github.com/praky826" target="_blank" rel="noopener"
+                   class="project-link" aria-label="View on GitHub" id="link-alter-ego-github">
+                  <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="project-name">ALTER-EGO</div>
+              <div class="project-tagline">AI-Powered Digital Personality Analyzer</div>
+            </div>
+            <p class="project-desc">
+              An AI platform that analyzes YouTube watch history to generate an interactive 3D digital
+              avatar representing user behavior and interests. Features sentiment analysis, topic clustering
+              pipelines, Pinecone vector search for semantic retrieval, and a conversational AI twin interface.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">FastAPI</span>
+              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">Pinecone</span>
+              <span class="tech-badge">OpenAI GPT-4</span>
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Three.js</span>
+              <span class="tech-badge">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- FINVISTA -->
+          <div class="project-card reveal" id="project-finvista">
+            <div class="project-header">
+              <div class="project-icon" style="background:#d1fae5;">📊</div>
+              <div class="project-links">
+                <a href="https://github.com/praky826" target="_blank" rel="noopener"
+                   class="project-link" aria-label="View on GitHub" id="link-finvista-github">
+                  <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="project-name">FINVISTA</div>
+              <div class="project-tagline">Financial Analytics &amp; Management Platform</div>
+            </div>
+            <p class="project-desc">
+              A comprehensive financial analytics platform supporting both personal and business finance.
+              Features automated financial evaluation engines, intelligent alert systems for credit
+              utilization and EMI tracking, taxation analysis for Indian tax regimes, and interactive
+              dashboards for assets, liabilities, and investments.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">FastAPI</span>
+              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">SQLAlchemy</span>
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- Dose Doctor -->
+          <div class="project-card reveal" id="project-dose-doctor">
+            <div class="project-header">
+              <div class="project-icon" style="background:#dbeafe;">🩺</div>
+              <div class="project-links">
+                <a href="https://github.com/praky826" target="_blank" rel="noopener"
+                   class="project-link" aria-label="View on GitHub" id="link-dose-doctor-github">
+                  <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="project-name">Dose Doctor</div>
+              <div class="project-tagline">Doctor Prescription Management System</div>
+            </div>
+            <p class="project-desc">
+              A healthcare platform enabling doctors to connect with patient profiles through
+              QR-code-based identification. Supports prescription creation and management workflows
+              with real-time Firebase synchronization, patient lookup, and secure doctor–patient
+              data communication.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">Firebase Firestore</span>
+              <span class="tech-badge">QR Technology</span>
+            </div>
+          </div>
+
+          <!-- DoseDost -->
+          <div class="project-card reveal" id="project-dosedost">
+            <div class="project-header">
+              <div class="project-icon" style="background:#fce7f3;">💊</div>
+              <div class="project-links">
+                <a href="https://github.com/praky826" target="_blank" rel="noopener"
+                   class="project-link" aria-label="View on GitHub" id="link-dosedost-github">
+                  <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="project-name">DoseDost</div>
+              <div class="project-tagline">Patient Medication Tracking Application</div>
+            </div>
+            <p class="project-desc">
+              The patient-side companion app for the Dose Doctor ecosystem. Built with QR-based
+              identification and profile management, real-time medication tracking via Firebase
+              Firestore streams, and user-friendly medication schedule interfaces with secure
+              doctor–patient synchronization.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">Firebase Firestore</span>
+              <span class="tech-badge">Dart</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider container"></div>
+
+    <!-- ═══════════════════════════════════════
+         CONTACT SECTION
+    ═══════════════════════════════════════ -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-inner">
+
+          <!-- Left: Links -->
+          <div>
+            <p class="section-label reveal">Get In Touch</p>
+            <h2 class="section-title reveal">Let's build something<br />great together</h2>
+            <p class="contact-tagline reveal">
+              Whether it's a project collaboration, internship opportunity, or just a chat about
+              AI and tech — my inbox is always open.
+            </p>
+
+            <div class="contact-links reveal">
+              <a href="mailto:prakyath238@gmail.com" class="contact-item" id="contact-email">
+                <div class="contact-item-icon email">✉️</div>
+                <div class="contact-item-text">
+                  <span class="label">Email</span>
+                  <span class="value">prakyath238@gmail.com</span>
+                </div>
+                <span class="contact-item-arrow">→</span>
+              </a>
+
+              <a href="https://github.com/praky826" target="_blank" rel="noopener" class="contact-item" id="contact-github">
+                <div class="contact-item-icon github">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#1e293b"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </div>
+                <div class="contact-item-text">
+                  <span class="label">GitHub</span>
+                  <span class="value">github.com/praky826</span>
+                </div>
+                <span class="contact-item-arrow">→</span>
+              </a>
+
+              <a href="https://linkedin.com/in/prakyath-tejsundar-4451573ab" target="_blank" rel="noopener" class="contact-item" id="contact-linkedin">
+                <div class="contact-item-icon linkedin">💼</div>
+                <div class="contact-item-text">
+                  <span class="label">LinkedIn</span>
+                  <span class="value">prakyath-tejsundar</span>
+                </div>
+                <span class="contact-item-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: CTA Box -->
+          <div class="reveal">
+            <div class="contact-cta-box">
+              <h3>Open to opportunities 🚀</h3>
+              <p>
+                I'm currently looking for internships, collaborative projects, and freelance
+                opportunities in AI, Full-Stack, and FinTech development. Let's create something impactful.
+              </p>
+              <a href="mailto:prakyath238@gmail.com" class="cta-mailto" id="cta-send-email">
+                ✉️ Send me an email
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by <a href="https://github.com/praky826" target="_blank" rel="noopener">Prakyath Tejsundar</a> · 2024</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
