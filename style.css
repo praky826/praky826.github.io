@@ -406,22 +406,11 @@ body {
   width: 260px;
   height: 260px;
   border-radius: 28px;
-  background: linear-gradient(135deg, var(--accent-soft) 0%, #dbeafe 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 6rem;
+  object-fit: cover;
+  object-position: center top;
   box-shadow: var(--shadow-lg);
   border: 3px solid rgba(79,70,229,0.12);
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-avatar::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(79,70,229,0.08) 0%, transparent 60%);
+  display: block;
 }
 
 .hero-stat-card {
